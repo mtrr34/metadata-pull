@@ -1,5 +1,5 @@
 # metadata-pull
-1) Use metadata.py to output a text file of tokenIds you are looking for. To run this do "python metadata.py x1 x2 x3 x4"
+1) Use metadata.py to output a text file of tokenIds you are looking for. Run this with "python metadata.py x1 x2 x3 x4"
     - x1 => baseTokenURI (can be found on the projects etherscan). 
     - x2 => collection size i.e. 10000. This is one of the variables used for calculating bound_size
     - x3 => number of threads i.e 4 or whatever. PC dependent this just helps speed up the process of getting tokenIds. To see the difference run it with 1 thread and then multiple. 
