@@ -18,7 +18,9 @@ bound_size = collection_size // n_threads
 def task(location, end):
     while location <= end:
         res = requests.get(url + str(location)).json()
-        output.write(str(res[output_arg]) + "\n")
+        if res["attributes"][2]["value"] == "Cyber Ghost":
+            print(res["attributes"][2]["value"])
+            output.write(str(res[output_arg]) + "\n")
         location += 1
 
 
