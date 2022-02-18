@@ -23,4 +23,4 @@ addresses = open("addresses.txt", "w")
 for id in ids:
     addresses.write((contract_instance.functions.ownerOf(int(id)).call()) + "\n")
 
-addresses.close
+addresses.close()
